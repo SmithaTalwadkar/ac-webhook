@@ -22,6 +22,7 @@ def resubscribe_contact(email):
     }
 
     response = requests.post(AC_API_URL, json=data, headers=headers)
+    print("Activecampaign API response", response.status_code, response.text)
     return response.status_code, response.text
 
 
