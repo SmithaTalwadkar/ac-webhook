@@ -38,7 +38,7 @@ def webhook():
                 status, response_text = resubscribe_contact(email)
                 print(f"Re-subscribed: {email} - Status: {status}")
 
-        return jsonify({"message": "Contacts processed"}), 200
+        return jsonify({"message": "Contacts processsed"}), 200
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
